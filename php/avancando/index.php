@@ -4,8 +4,8 @@
 
 <h1><ul>
 <li><a href="01_condicionais.php">Condicionais</a></li>
-<li><a href="">Laços de Repetições</a></li>
-<li><a href="">Formulários</a></li>
+<li><a href="02_lacos_de_repeticao.php">Laços de Repetição</a></li>
+<li><a href="03_formularios.php">Formulários</a></li>
 <li><a href="">Vallidação e escaping</a></li>
 <li><a href="">$_GET,$POST,$_REQUEST,$_SERVER</a></li>
 <li><a href="">Funções</a></li>
