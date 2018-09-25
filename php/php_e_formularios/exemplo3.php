@@ -1,8 +1,21 @@
-<?php
+<?php 
+// GARANTINDO TIPOS DE VARIAVEIS
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    echo "O formulario foi enviado pelo ".$_POST['nome'];
-    exit;
+    $idade = (int)$_POST['idade'];
+    
+    if ($idade < 18){
+        die('Voce é muito novo');
+    }
+    
+    $idade_string = (string)$idade;
+    
+    var_dump($idade_string, $idade);
+
+    echo 'ok sua idade é ' . $idade;
+        exit;
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,17 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 </head>
 <body>
     <form action="" method="post">
-        <input type="text" name="nome">
+        <input type="text" name="idade" placeholder="idade">
         <input type="submit" value="enviar">
     </form>
-
-<a href="index.php?name=fabio">nome</a>
-
-<?php 
-if (isset($_GET['name']) != false ){
-}
-    
-?>
 
 </body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+//LENDO DIFEREWNTES CAMPOS DE UM FORMULARIO
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     var_dump($_POST);

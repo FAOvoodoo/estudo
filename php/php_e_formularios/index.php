@@ -1,15 +1,10 @@
-<?php 
+<?php
+//Filtragem de dados com input_filter
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $idade = (int)$_POST['idade'];
-    
-    if ($idade < 18){
-        die('Voce é muito novo');
-    }
-    echo 'ok sua idade é ' . $idade;
-        exit;
+    echo "O formulario foi enviado pelo ".$_POST['nome'];
+    exit;
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +16,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 </head>
 <body>
     <form action="" method="post">
-        <input type="text" name="idade" placeholder="idade">
+        <input type="text" name="nome">
         <input type="submit" value="enviar">
     </form>
+
+<a href="index.php?name=fabio">nome</a>
+
+<?php 
+if (isset($_GET['name']) != false ){
+}
+    
+?>
 
 </body>
 </html>
