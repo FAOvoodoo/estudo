@@ -1,5 +1,5 @@
 <?php
-//isset vs empty
+//Filtragem de dados com filter_input
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS); //ja pega o dado filtrando como => htmlspecialchars do exemplo 5
