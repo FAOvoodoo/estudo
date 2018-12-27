@@ -1,4 +1,18 @@
 SE O PROJETO LARAVEL NAO ESTIVER ABRINDO CORRETAMENTE NO APACHE2
 
-voodoo@voodoo-home:~$ sudo chgrp -R www-data /var/www/exemplo
-voodoo@voodoo-home:~$ sudo chmod -R 775 /var/www/exemplo/storage
+sudo chgrp -R www-data /var/www/exemplo
+sudo chmod -R 775 /var/www/exemplo/storage
+
+https://www.digitalocean.com/community/tutorials/como-configurar-apache-virtual-hosts-no-ubuntu-14-04-lts-pt
+
+
+
+sudo chown -R $USER:$USER /var/www/exemplo/public_html
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/exemplo.conf
+sudo a2ensite example.com.conf
+
+
+
+NOVO LARAVEL
+
+composer create-project --prefer-dist laravel/laravel
