@@ -1,0 +1,4 @@
+SE O PROJETO LARAVEL NAO ESTIVER ABRINDO CORRETAMENTE NO APACHE2
+
+voodoo@voodoo-home:~$ sudo chgrp -R www-data /var/www/exemplo
+voodoo@voodoo-home:~$ sudo chmod -R 775 /var/www/exemplo/storage
