@@ -10,7 +10,28 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/cliente/cadastrar', function () {
+    $nome = 'Fabio';
+    $variavel1 = 'valor';
+    $variavel2 = 'valor2';
+
+    /*
+    return view('cadastrar', [
+        'nome' => $nome,
+        'variavel1' => '$variavel1',
+        'variavel2' => '$variavel2'
+    ]); */
+
+    // return view('cadastrar', compact('nome','variavel1','variavel2'));
+
+
+
+
+
 });

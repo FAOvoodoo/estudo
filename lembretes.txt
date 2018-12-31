@@ -3,7 +3,7 @@ SE O PROJETO LARAVEL NAO ESTIVER ABRINDO CORRETAMENTE NO APACHE2
 sudo chgrp -R www-data /var/www/exemplo
 sudo chmod -R 775 /var/www/exemplo/storage
 
-https://www.digitalocean.com/community/tutorials/como-configurar-apache-virtual-hosts-no-ubuntu-14-04-lts-pt
+https://www.digitalocean.com/community/tutorials/como-confisudo a2ensite example.com.confgurar-apache-virtual-hosts-no-ubuntu-14-04-lts-pt
 
 
 
@@ -17,6 +17,8 @@ NOVO LARAVEL
 
 composer create-project --prefer-dist laravel/laravel
 
+SERVIDOR
+php artisan serve
 
 GITHUB 
 
@@ -29,3 +31,6 @@ git remote rm origin
 
 git remote add origin git@github.com:FAOvoodoo/exemplo.git
 git push -u origin master
+
+
+sudo kill $(sudo lsof -t -i:8000)

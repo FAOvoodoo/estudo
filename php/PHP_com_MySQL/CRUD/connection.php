@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('127.0.0.1' , "devphp" , '123456','php_mysql_iniciando');
+$conn = new mysqli('localhost' , "devphp" , '123456','php_mysql_iniciando',3306);
 
 if($conn->connect_errno){
 

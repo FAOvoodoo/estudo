@@ -29,12 +29,14 @@
                 <td><?php echo $user['id']; ?></td>
                 <td><?php echo $user['email']; ?></td>
                 <td>
-                <a href="/CRUD/ver.php?id=<?php echo $user['id']?>">ver</a>
+                <a href="ver.php?id=<?php echo $user['id']?>">VER</a>
+                <a href="editar.php?id=<?php echo $user['id']?>">EDITAR</a>
+                <a href="apagar.php?id=<?php echo $user['id']?>">APAGAR</a>
                 </td>
             </tr>
         <?php endforeach; ?>
         </tbody>
     </table>
-
+<p><a href="adicionar.php">adicionar</a>
 </body>
 </html>
